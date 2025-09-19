@@ -1,0 +1,15 @@
+# General settings for the pipeline
+general:
+  cpiApiServiceKeyCredentialsId: "desgauthapikey"
+
+# Define the pipeline stages
+stages:
+  # This single stage will deploy the iFlow and update the URL
+  Deploy:
+    steps:
+      - name: "Deploy iFlow and Update Address"
+        cloudIntegrationDeploy:
+          packageId: "dev_tenant_cicd"
+          integrationFlowId: "calling_iflows_from_other_cpi_account_Created"
+          filePath: "calling_iflows_from_other_cpi_account.zip"
+          configurationFile: "prod_config.json"
