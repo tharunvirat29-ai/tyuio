@@ -2,6 +2,7 @@
 general:
   cpiApiServiceKeyCredentialsId: "desgauthapikey"
   integrationFlowId: "calling_iflows_from_other_cpi_account"
+
 stages:
   Upload:
     enabled: true
@@ -9,8 +10,9 @@ stages:
     enabled: false
   Integration Test:
     enabled: false
+
 steps:
   integrationArtifactUpload:
     packageId: "devtenantcicd"
     integrationFlowName: "calling iflows from other cpi account Created"
-    filePath: "calling iflows from other cpi account Created.zip"
+    filePath: "calling_iflows_from_other_cpi_account.zip"
