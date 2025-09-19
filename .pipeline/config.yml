@@ -13,3 +13,4 @@ steps:
   integrationArtifactUpload:
     packageId: "devtenantcicd"
     integrationFlowName: "calling iflows from other cpi account Created"
+    filePath: "calling iflows from other cpi account Created.zip"
